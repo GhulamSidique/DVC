@@ -5,6 +5,10 @@ import os
 data = {"Name": ["Haji", "Ali", "hussain"], "Age":[25, 20, 18], "City": ["Khi", "Lrk", "Hyd"]}
 df = pd.DataFrame(data)
 
+# add a new row
+new_data = {"Name":"GS", "Age":32, "City":"Isl"}
+df.loc[len(df.index)] = new_data
+
 # make a folder and save this dataframe inside it
 folder = "Data"
 os.makedirs(folder, exist_ok=True)
