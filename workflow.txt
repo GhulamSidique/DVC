@@ -9,7 +9,7 @@ Following functionalities will be implemented
 a) git rm -r --cached 'Data'
 b) git commit -m "Stopped tracking by Git" 
 now run--> dvc add Data/. After tracking an Id and a data file is created inside the .dvc file in which versions are maintained along with their ids. Now also track the files .gitignore and Data.dvc by running --> git add .gitignore Data.dvc
-8. now add the files using --> git add . and add a commit and finally push to the github repo
-9. commit and push to dvc by --> dvc commit, dvc push
+8. commit and push to dvc by --> dvc commit, dvc push
+9. now add the files using --> git add . and add a commit and finally push to the github repo
 
 
