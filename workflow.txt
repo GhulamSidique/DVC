@@ -14,5 +14,6 @@ now run--> dvc add Data/. After tracking an Id and a data file is created inside
 10. now make changes in the data file that is sample.csv and add a  new row and then check what has happened with the dvc version --> dvc status
 11. commit and push the changes in dvc by --> dvc commit -f, dvc push and then add them to git and commit and finally push to main
 12. now add another row to create the third version of data and repeate 11
-
+13. finally we have to switch to the 1st version of data then --> git checkout sha id --> once we get there all previous versions will be wiped out from the code and then run ---> dvc pull --> to make sure the changes in the data file too 
+14. to again return all versions --> git checkout main and then --> dvc pull
 
