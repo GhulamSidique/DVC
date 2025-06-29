@@ -9,6 +9,10 @@ df = pd.DataFrame(data)
 new_data = {"Name":"GS", "Age":32, "City":"Isl"}
 df.loc[len(df.index)] = new_data
 
+# add another new row
+new_data2 = {"Name":"GD", "Age":32, "City":"Isl"}
+df.loc[len(df.index)] = new_data2
+
 # make a folder and save this dataframe inside it
 folder = "Data"
 os.makedirs(folder, exist_ok=True)
