@@ -1,0 +1,15 @@
+Following functionalities will be implemented
+1. Create a DVC repo and clone it 
+2. create a sample.py file to create a csv file and save it inside a data folder
+3. add and commit the files and push them to the main branch of repo
+4. now initialize the dvc by dvc init and before it install it by --> pip install dvc, after initialization two files will be created and these are .dvc and .dvcignore
+5. now create a S3 folder for saving the data versions inside it 
+6. now define the path or destination of S3 folder on remote repo by running --> dvc remote add -d <name S3> --> here name is "myremote S3", we can add url inplace of S3 if we make use of S3 website
+7. now for maintaining the versions of data run --> dvc add Data/ --> Data/ is a folder name here which we have created and there is a csv file inside it but before that run the following to commands to stop the tracking of Data folder by Git bcz now we want it to be tracked by dvc
+a) git rm -r --cached 'Data'
+b) git commit -m "Stopped tracking by Git" 
+now run--> dvc add Data/. After tracking an Id and a data file is created inside the .dvc file in which versions are maintained along with their ids. Now also track the files .gitignore and Data.dvc by running --> git add .gitignore Data.dvc
+8. now add the files using --> git add . and add a commit and finally push to the github repo
+9. commit and push to dvc by --> dvc commit, dvc push
+
+
